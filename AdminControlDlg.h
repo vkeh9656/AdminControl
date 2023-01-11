@@ -3,12 +3,14 @@
 //
 
 #pragma once
-
+#include "UserWnd.h"
 
 // CAdminControlDlg 대화 상자
 class CAdminControlDlg : public CDialogEx
 {
-// 생성입니다.
+private:
+	UserWnd m_user_wnd;
+	// 생성입니다.
 public:
 	CAdminControlDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
 
